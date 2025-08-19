@@ -1,0 +1,38 @@
+# --- Node / Vite (frontend) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+# Vite env files
+frontend/.env*
+!frontend/.env.example
+
+# --- Python / FastAPI (backend) ---
+backend/.venv/
+backend/__pycache__/
+backend/*.py[cod]
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/.ruff_cache/
+
+# Env + local settings
+backend/.env
+*.env
+
+# Build / caches
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# --- Photogrammetry outputs / local data ---
+data/
+backend/data/
+**/output/
+**/*.db
+**/*.ply
+
+# --- OS/Editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
